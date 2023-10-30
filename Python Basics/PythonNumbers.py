@@ -45,8 +45,8 @@ print("var2:", var2, "and type:", type(var2))
 # adding binary, octal, decimal, hexadecimal numbers all together
 var1 = 100 # decimal number
 var2 = 0b100 # binary number 0b100(binary) = 4(decimal)
-var3 = 0o100 # octal number 0b100(octal) = 64(decimal)
-var4 = 0x100 # hexadecimal number 0b100(hexadecimal) = 256(decimal)
+var3 = 0o100 # octal number 0O100(octal) = 64(decimal)
+var4 = 0x100 # hexadecimal number 0X100(hexadecimal) = 256(decimal)
 
 sum = var1 + var2 + var3 + var4
 print("Sum:", sum)
