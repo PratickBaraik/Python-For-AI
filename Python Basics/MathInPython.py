@@ -128,10 +128,58 @@ print("float(nan):", math.isnan(float("nan"))) # nan aka Not A Number
 print("float(inf)", math.isnan(float("inf"))) # inf: any infinite value (+ve)
 print("float(-inf)", math.isnan(float("-inf"))) # inf: any infinte value (-ve)
 
-# TODO: math.isqrt()
-# TODO: math.lcm()
-# TODO: math.ldexp()
-# TODO: math.modf()
-# TODO: math.nextafter()
-# TODO: math.perm()
-# TODO: math.prod()
+# math.isqrt() function in python
+# returns the integer square root of the non-negative integer.
+print("math.sqrt() function")
+var1 = math.sqrt(5)
+var2 = math.sqrt(10)
+var3 = math.sqrt(70)
+var4 = math.sqrt(12)
+print("Square root of 5:", var1)
+print("Square root of 10:", var2)
+print("Square root of 70:", var3)
+print("Square root of 12:", var4)
+
+# math.lcm() function in python
+# return the least common multiple of the specified integer arguments.
+# print("LCM of 5, 10, 20, 30:", math.lcm(5, 10, 20, 30))
+# print("LCM of 7, 21, 63, 35:", math.lcm(7, 21, 63, 35))
+# require proper initialization (not working this way)
+
+# math.ldexp() function in python
+# if used as math.ldexp(n, m) -> returns n * (2 ** m)
+print("math.ldexp() function")
+print(math.ldexp(8, 10))
+print(math.ldexp(2, 7))
+print(math.ldexp(3.4, 4))
+
+# math.modf() function in python
+# return the fractional integer parts of a number, both results carray the sign of number and are floats
+print("math.modf() function")
+print(math.modf(2.1))
+print(math.modf(3))
+
+# math.nextafter(x, y, steps=1) function in python
+# return the floating-point value 'steps' steps after x towards y
+# if x is equal to y, return y, unless steps is zero.
+# print("math.nextafter() function")
+# print(math.nextafter())
+# need to find an alternative for this (not working)
+
+# math.perm() function in python
+# does the permutation operation
+#  nPr = n! / (n - r)!, r <= n and if r > n, it results 0
+# print("math.perm() function")
+# print(math.perm(2, 7))
+# not working this way
+
+# math.prod() function in python
+# calcuate the product of all the elements in the input iterable. Default start value is 1.
+# print("math.prod() function")
+# print("Product of 2, 3, 4:", math.prod(2, 3, 4))
+# not working
+
+# math.remainder() function in python
+# return the IEEE 754-style remainder of x with respect to y.
+print("math.remainder() function")
+print(math.remainder(6, 3))
